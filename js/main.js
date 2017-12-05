@@ -21,6 +21,10 @@ function compare (){
   var tracks = document.getElementById('result');
   if (numIntroducido===numberPlayed){
     tracks.innerHTML='Has acertado';
+		//Y te sale la pantalla para guardar
+		var inputSave = document.querySelector('.input-name-form');
+		inputSave.classList.add('show');
+
 } else if (numIntroducido > 200 || numIntroducido < 0){
 	tracks.innerHTML='El número debe ser comprendido entre 1 y 200';
 } else if (numIntroducido < numberPlayed){
@@ -35,7 +39,7 @@ counting ++;
 }
 buttonInput.addEventListener('click', compare);
 
-//Para mostrar las pistas
+//Para mostrar las pistas la primera vez
 function mostrarPistas () {
 	var tracksSection = document.querySelector('.pistas');
 	tracksSection.classList.add('show');
