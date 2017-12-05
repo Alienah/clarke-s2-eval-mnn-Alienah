@@ -45,6 +45,12 @@ justify-content: space-around;
 align-items: center;
 height: 120px;
 }
+.hide{
+display: none;
+}
+.show{
+display: block;
+}
 .input-name-form{
 margin: 10px 0;
 }
