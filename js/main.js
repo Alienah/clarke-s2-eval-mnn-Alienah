@@ -8,7 +8,7 @@ function getRandomIntInclusive(min, max) {
 }
 
 //Llamamos a la función para generar nuestro número
-var numberPlayed= getRandomIntInclusive(1, 200);
+var numberPlayed= getRandomIntInclusive(1, 100);
 console.log(numberPlayed);
 
 var buttonInput =document.querySelector('.button-input');
@@ -26,13 +26,13 @@ function compare (){
 		inputSave.classList.add('show');
 
 } else if (numIntroducido > 200 || numIntroducido < 0){
-	tracks.innerHTML='El número debe ser comprendido entre 1 y 200';
+	tracks.innerHTML='El número debe ser comprendido entre 1 y 100';
 } else if (numIntroducido < numberPlayed){
   tracks.innerHTML='El número que has introducido es menor que el número secreto';
 } else if (numIntroducido > numberPlayed){
   tracks.innerHTML='El número que has introducido es mayor que el número secreto';
 } else {
-	tracks.innerHTML='Error. Tienes que introducir un número entre el 1 y el 200';
+	tracks.innerHTML='Error. Tienes que introducir un número entre el 1 y el 100';
 }
 counting ++;
 	triesNumber.innerHTML= counting;
@@ -45,3 +45,13 @@ function mostrarPistas () {
 	tracksSection.classList.add('show');
 }
 buttonInput.addEventListener('click', mostrarPistas);
+
+//Para guardar en el histórico
+function savePunctuation() {
+	var itemData = '<li class="item-data">' + document.getElementById("name-input").value + ' - ' + counting + ' intentos.</li>'
+
+	var placeForData = document.getElementById('lista');
+  placeForData.insertAdjacentHTML('beforeend', itemData);
+}
+var buttonName = document.querySelector('.name-button');
+buttonName.addEventListener('click', savePunctuation);
