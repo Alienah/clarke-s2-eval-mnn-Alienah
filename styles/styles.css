@@ -3,15 +3,43 @@ box-sizing: border-box;
 margin: 0;
 }
 main{
-height: 100%;
-background-color: #D3F7F2;
+height: 100vh;
+background-color: #D7DADB;
 padding: 30px;
 display: flex;
 flex-direction: column;
 align-items: center;
+color: #2C3E50;
+font-family: 'Changa', sans-serif;
+font-size: 16px;
+}
+.box-style{
+border-radius: 6px;
+border-style: groove;
+padding: 5px;
+text-align: center;
+font-size: 15px;
+color:inherit;
+}
+.button-input{
+border-radius: 6px;
+padding: 5px 20px;
+cursor: pointer;
+background: #1E1861;
+color: #fff;
+text-shadow: #fff 0 1px 0;
+box-shadow: inset 0px 0px 6px #c0bede;
+border: none;
+font-family: inherit;
+}
+.button-input:hover{
+background: #9AC0BA;
+text-shadow: #1E1861 0 1px 0;
+color: #1E1861;
+box-shadow: inset 0 0 20px #9AC0BA, 0 0 20px #9AC0BA;
+border-color:#9AC0BA;
 }
 .play-container{
-height: 75%;
 width: 80%;
 text-align: center;
 }
@@ -20,7 +48,7 @@ height: 25%;
 width: 80%;
 padding-left: 10%;
 padding-top: 2%;
-border-top: 2px solid #598A83;
+border-top: 2px solid #2C3E50;
 margin-top: 20px;
 line-height: 1.6;
 }
@@ -34,9 +62,11 @@ padding-bottom: 30px;
 flex-grow: 3;
 }
 .counting-number{
-font-size: 50px;
-color: red;
-padding-right: 10%;
+font-size: 60px;
+color: #FC4349;
+padding-right: 5%;
+padding-left: 3%;
+margin-top: -26px;
 }
 .input-play-form{
 display: flex;
@@ -52,19 +82,15 @@ display: none;
 	display: block;
 }
 .input-name-form{
-margin: 10px 0;
-}
-#name-input{
-text-align: center;
-padding: 2px;
+margin: 20px 0;
 }
 .pistas {
-	border: 1px solid blue;
+	border: 1px solid #1E1861;
 	border-radius: 5px;
 	padding: 20px 10px;
 	font-size: 25px;
-	color: blue;
-	background-color: #EEF3F2;
+	color: #1E1861;
+	background-color: #9AC0BA;
 }
 /*Mediaqueries */
 @media all and (min-width:900px) {
@@ -74,13 +100,16 @@ padding: 2px;
 		justify-content: space-around;
 	}
 	.title-data{
-text-align: center;
+	padding-left: 10%;
 }
 	.play-container{
 	padding-right: 15px;
 }
+	.input-play-form{
+	padding-right: 6%;
+}
 	.data-container{
-	border-left: 2px solid #598A83;
+	border-left: 2px solid #2C3E50;
 	border-top:none;
 	height: 100vh;
 	padding-left: 60px;
