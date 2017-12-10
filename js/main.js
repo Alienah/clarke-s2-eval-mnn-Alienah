@@ -17,13 +17,15 @@ var buttonInput = document.querySelector('.button-input');
 var triesNumber = document.querySelector('.counting-number');
 var counting = 0;
 var inputSave = document.querySelector('.input-name-form');
+var tracks = document.getElementById('result');
 
 function compare (){
 	var numIntroduced = document.getElementById('number-input').value;
 	var numIntroduced = parseInt (numIntroduced);
-	var tracks = document.getElementById('result');
+
 	if (numIntroduced===numberPlayed){
-		tracks.innerHTML='Has acertado';
+		tracks.innerHTML='Has acertado!';
+		tracks.classList.add('great');
 		//Y te sale la pantalla para guardar
 		inputSave.classList.add('show');
 
@@ -61,6 +63,7 @@ function savePunctuation() {
 
 	inputSave.classList.remove('show');
 	tracksSection.classList.remove('show');
+	tracks.classList.remove('great');
 	newNumber();
 	counting = 0;
 	triesNumber.innerHTML= counting;

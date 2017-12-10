@@ -9,36 +9,34 @@
 	<title>Evaluación Aida Sprint 2</title>
 </head>
 <body>
-<main>
-<!--Sección del juego-->
-	<div class="play-container">
-		<div class="title-play-container">
-			<h1 class="title-play">Adivina el número</h1>
-			<span class="counting-number" id="counter">0</span>
+	<main>
+	<!--Sección del juego-->
+		<div class="play-container">
+			<div class="title-play-container">
+				<h1 class="title-play">Adivina el número</h1>
+				<span class="counting-number" id="counter">0</span>
+			</div>
+			<div class="input-play-form">
+				<label class="label-styles"for="number-imput">Introduce aquí tu número</label>
+				<input type="text" class="box-style"id="number-input" name="number">
+				<button type="button" class=button-input id="get-button" name="button-try">Prueba</button>
+			</div>
+			<div class="input-name-form hide">
+				<label class="label-styles"for="name-imput">¡Bien hecho! Introduce tu nombre para guardar tu puntuación.</label>
+				<input type="text" class="box-style"id="name-input" name="name" placeholder="Introduce tu nombre">
+				<button type="button" class="button-input name-button" id="save-button" name="button-save">Guarda</button>
+			</div>
+			<div class="pistas hide">
+				<p class="pista" id="result">Introduce un número entre el 1 y 200.</p>
+			</div>
 		</div>
-		<div class="input-play-form">
-			<label for="number-imput">Introduce aquí tu número</label>
-			<input type="text" class="box-style"id="number-input" name="number">
-			<button type="button" class=button-input id="get-button" name="button-try">Prueba</button>
-		</div>
-		<div class="input-name-form hide">
-			<label for="name-imput">¡Bien hecho! Introduce tu nombre para guardar tu puntuación.</label>
-			<input type="text" class="box-style"id="name-input" name="name" placeholder="Introduce tu nombre">
-			<button type="button" class="button-input name-button" id="save-button" name="button-save">Guarda</button>
-		</div>
-		<div class="pistas hide">
-			<p class="pista" id="result">Introduce un número entre el 1 y 200.</p>
-		</div>
-	</div>
 
-<!--Sección del histórico-->
-	<div class="data-container">
-		<h2 class="title-data">Histórico</h2>
-		<ul id="lista"class="lista-historico">
-
-		</ul>
-
-	</div>
+		<!--Sección del histórico-->
+		<div class="data-container">
+			<h2 class="title-data">Histórico</h2>
+			<ul id="lista"class="lista-historico">
+			</ul>
+		</div>
 	</main>
 	<script type="text/javascript" src="js/main.js">
 
