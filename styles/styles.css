@@ -112,6 +112,22 @@ main{
 		justify-content: center;
 		align-items: inherit;
 	}
+
+}
+@media all and (min-width:340px){
+	.data-container{
+		padding: 10% 0;
+}
+}
+@media all and (max-width:900px){
+	.title-data{
+		text-align: center;
+}
+}
+@media all and (min-width:600px) and (max-width:900px){
+	.data-container{
+		padding: 5% 10%;
+}
 }
 @media all and (min-width:900px) {
 	main{
@@ -136,5 +152,6 @@ main{
 		border-top:none;
 		height: 100vh;
 		width: 40%;
+		padding-left: 5%;
 	}
 }
