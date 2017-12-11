@@ -43,9 +43,7 @@ main{
 	background: #ff9534;
 	text-shadow: #fff 0 1px 0;
 	color: #fff;
-	padding: 3px 20px;
 	border-color:#ff9534;
-	border-style: inset;
 }
 .play-container{
 	width: 80%;
@@ -61,20 +59,15 @@ main{
 	line-height: 1.6;
 }
 .title-play-container{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	text-align: center;
 	padding-bottom: 30px;
 }
-.title-play{
-	flex-grow: 3;
-}
 .counting-number{
+	position: absolute;
 	font-size: 60px;
 	color: #ff9534;
-	padding-right: 6%;
-	padding-left: 3%;
-	margin-top: -26px;
+	left: 83%;
+  top: 0;
 }
 .input-play-form{
 	display: flex;
@@ -91,6 +84,17 @@ main{
 }
 .input-name-form{
 	margin: 20px 0;
+	display: flex;
+  flex-direction: column;
+	align-items: center;
+}
+.name-input-div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	min-width: 69%;
+	padding: 10px;
 }
 .pistas {
 	border: 1px solid #1E1861;
@@ -109,23 +113,23 @@ main{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
+		align-items: flex-start;
 	}
 	.title-data{
 		padding-left: 10%;
 	}
 	.play-container{
-		padding-right: 15px;
+		padding-right: 5%;
+		padding-top: 30px;
 	}
-	.input-play-form{
-		padding-right: 6%;
+	.counting-number{
+		left: 55%;
+		top: 35px;
 	}
 	.data-container{
 		border-left: 2px solid rgb(215, 218, 219);
 		border-top:none;
 		height: 100vh;
-		padding-left: 60px;
-		padding-top: 70px;
-		margin-top: -30px;
 		width: 40%;
 	}
 }

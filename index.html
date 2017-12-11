@@ -14,8 +14,9 @@
 		<div class="play-container">
 			<div class="title-play-container">
 				<h1 class="title-play">Adivina el número</h1>
-				<span class="counting-number" id="counter">0</span>
+
 			</div>
+			<p class="counting-number" id="counter">0</p>
 			<div class="input-play-form">
 				<label class="label-styles"for="number-imput">Introduce aquí tu número</label>
 				<input type="number" class="box-style"id="number-input" name="number">
@@ -23,8 +24,10 @@
 			</div>
 			<div class="input-name-form hide">
 				<label class="label-styles"for="name-imput">¡Bien hecho! Introduce tu nombre para guardar tu puntuación.</label>
-				<input type="text" class="box-style"id="name-input" name="name" placeholder="Introduce tu nombre">
-				<button type="button" class="button-input name-button" id="save-button" name="button-save">Guarda</button>
+				<div class="name-input-div">
+					<input type="text" class="box-style"id="name-input" name="name" placeholder="Introduce tu nombre">
+					<button type="button" class="button-input name-button" id="save-button" name="button-save">Guarda</button>
+				</div>
 			</div>
 			<div class="pistas hide">
 				<p class="pista" id="result">Introduce un número entre el 1 y 200.</p>
