@@ -40,6 +40,7 @@ function compare (){
 	}
 	counting ++;
 	triesNumber.innerHTML= counting;
+	document.getElementById('number-input').value = '';
 }
 
 buttonInput.addEventListener('click', compare);
