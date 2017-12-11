@@ -12,7 +12,7 @@ main{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	color: #e4fff6;
+	color: #31302f;
 	font-family: 'Changa', sans-serif;
 	font-size: 16px;
 }
@@ -32,7 +32,7 @@ main{
 	padding: 5px 20px;
 	cursor: pointer;
 	background: #D7DADB;
-	color: #322110;
+	color: inherit;
 	text-shadow: #322110 0 1px 0;
 	box-shadow: inset 0px 0px 6px #c0bede;
 	border: none;
@@ -40,10 +40,10 @@ main{
 	margin: 10px 5px 10px;
 }
 .button-input:hover{
-	background: #ff9534;
+	background: #31302f;
 	text-shadow: #fff 0 1px 0;
 	color: #fff;
-	border-color:#ff9534;
+	border-color:#31302f;
 }
 .play-container{
 	width: 80%;
@@ -65,7 +65,7 @@ main{
 .counting-number{
 	position: absolute;
 	font-size: 60px;
-	color: #ff9534;
+	color: #e23f3f;
 	left: 83%;
   top: 0;
 }
@@ -84,16 +84,10 @@ main{
 }
 .input-name-form{
 	margin: 20px 0;
-	display: flex;
-  flex-direction: column;
-	align-items: center;
+	text-align: center;
 }
 .name-input-div{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	min-width: 69%;
+
 	padding: 10px;
 }
 .pistas {
@@ -101,13 +95,24 @@ main{
 	border-radius: 5px;
 	padding: 20px 10px;
 	font-size: 25px;
-	color: #322110;
+	color: #2b3482;
 	background-color: rgba(215, 218, 219, 0.7);
 }
 .great{
 	color: green;
 }
 /*Mediaqueries */
+@media all and (max-width:340px){
+	.name-input-div{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.input-play-form{
+		justify-content: center;
+		align-items: inherit;
+	}
+}
 @media all and (min-width:900px) {
 	main{
 		display: flex;

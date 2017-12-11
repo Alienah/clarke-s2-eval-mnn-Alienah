@@ -32,9 +32,9 @@ function compare (){
 	} else if (numIntroduced > 100 || numIntroduced < 0){
 		tracks.innerHTML='El número debe ser comprendido entre 1 y 100';
 	} else if (numIntroduced < numberPlayed){
-		tracks.innerHTML='El número que has introducido es menor que el número secreto';
+		tracks.innerHTML='Demasiado bajo';
 	} else if (numIntroduced > numberPlayed){
-		tracks.innerHTML='El número que has introducido es mayor que el número secreto';
+		tracks.innerHTML='Demasiado alto';
 	} else {
 		tracks.innerHTML='Error. Tienes que introducir un número entre el 1 y el 100';
 	}
