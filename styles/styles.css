@@ -67,7 +67,7 @@ main{
 	font-size: 60px;
 	color: #e23f3f;
 	left: 83%;
-  top: 0;
+  top: 6px;
 }
 .input-play-form{
 	display: flex;
@@ -158,5 +158,6 @@ main{
 		height: 100vh;
 		width: 40%;
 		padding-left: 5%;
+		padding-top: 0;
 	}
 }
