@@ -119,6 +119,11 @@ main{
 		padding: 10% 0;
 }
 }
+@media all and (max-width:450px){
+ main{
+	font-size: 20px;
+}
+}
 @media all and (max-width:900px){
 	.title-data{
 		text-align: center;
