@@ -67,7 +67,7 @@ main{
 	position: absolute;
 	font-size: 60px;
 	color: #e23f3f;
-	right: -10%;
+	right: -13%;
   top: 35px;
 }
 .input-play-form{
@@ -133,6 +133,9 @@ main{
 	.data-container{
 		padding: 5% 10%;
 	}
+	.counting-number{
+		right: -10%;
+}
 }
 @media all and (min-width:900px) {
 	main{
