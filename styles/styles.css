@@ -48,6 +48,7 @@ main{
 .play-container{
 	width: 80%;
 	text-align: center;
+	position: relative;
 }
 .data-container{
 	height: 25%;
@@ -66,8 +67,8 @@ main{
 	position: absolute;
 	font-size: 60px;
 	color: #e23f3f;
-	left: 83%;
-  top: 6px;
+	right: -10%;
+  top: 35px;
 }
 .input-play-form{
 	display: flex;
@@ -87,7 +88,6 @@ main{
 	text-align: center;
 }
 .name-input-div{
-
 	padding: 10px;
 }
 .pistas {
@@ -117,22 +117,22 @@ main{
 @media all and (min-width:340px){
 	.data-container{
 		padding: 10% 0;
-}
+	}
 }
 @media all and (max-width:459px){
- main{
-	font-size: 20px;
-}
+ 	main{
+		font-size: 20px;
+	}
 }
 @media all and (max-width:900px){
 	.title-data{
 		text-align: center;
-}
+	}
 }
 @media all and (min-width:600px) and (max-width:900px){
 	.data-container{
 		padding: 5% 10%;
-}
+	}
 }
 @media all and (min-width:900px) {
 	main{
@@ -149,8 +149,7 @@ main{
 		padding-top: 30px;
 	}
 	.counting-number{
-		left: 55%;
-		top: 35px;
+		right: 5%;
 	}
 	.data-container{
 		border-left: 2px solid rgb(215, 218, 219);
